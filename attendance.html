@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main_div">
+        <div class="first">
+            <div class="fixed-header" id="top">
+                <div class="logo">
+                    <img src="logo.png" height="70" width="100">
+                    <span class="img_logo">School Management</span>
+                </div>
+            </div>
+        </div>
+        <div class="second">
+         <div class="aside" id="left">
+            <div class="fixed-link" id="menu">
+                <nav>
+                    <a href="home.html">Home</a>
+                    <a href="attendance.html">Attendance</a>
+                    <a href="results.html">Result</a>
+                    <a href="feedback.php">Feedback</a>
+                </nav>
+        </div> 
+         </div>
+         <div class="content" id="right">
+            <div class="container" id="content">
+                <h2>Attendance</h2>
+                <form name="f1" action="check_login.php" method="POST">
+                    <label for="Username" ><b>Username :-</b></label>
+                    <input type="text" class="input-field" name="uname" required >
+                    <label for="Password" ><b>Password :-</b></label>
+                    <input type="password" class="input-field" id="psw" name="pass"  required>
+                    <button type="submit" name="submit">Submit</button>
+                </form>
+                <div id="message">
+                    <h3>Password must contain the following:</h3>
+                    <p id="length" class="invalid">Minimum <b>6 characters</b></p>
+                  </div>
+            </div>
+    
+         </div>
+        </div>
+        <div class="third">
+            <div class="fixed-footer" id="footer">
+                &copy; School Management
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
